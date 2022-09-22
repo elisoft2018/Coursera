@@ -21,4 +21,4 @@ print('Pruebas'.islower())
 print('pruebas'.islower())
 print('messi 10'.isnumeric())
 print('100000'.isnumeric())
-
+print('imprimmir'.isprintable())
