@@ -60,5 +60,7 @@ print(a_string)
 print(' python es genial! ')
 print(' python es genial! '.strip())
 print('py'.capitalize().startswith('Py'))
-a_list = ['1','2','3']
-print('-'.join(a_list))
+
+
+nombre = input('Digite su nombre')
+print('Su nombre Esta en Mayuscula?: ', nombre.isupper())
