@@ -1,4 +1,4 @@
-import math
+"""import math
 
 s = "Hola Mundo"
 print(str(s))
@@ -63,4 +63,38 @@ for nombre, telefono in tabla.items():
     print('{0:10} ===> {1:10d}'.format(nombre, telefono))
 print('John: {0[John]:d};Eliseo: {0[Eliseo]:d};Andres: {0[Andres]:d}'.format(tabla))
 print('John:{John:d};Eliseo:{Eliseo:d};Andres:{Andres:d}'.format(**tabla))
+print('\n')
+f = open('pruebaLecturaArchivo.txt', 'w')
+f.write('Cebolla')
+f.close()
+f = open('pruebaLecturaArchivo.txt')
+# print("Datos del archivo con read\n ", f.read())
+# print("Datos del archivo con readline\n", f.readline())
+# for linea in f:
+#    print("Leer datos del archivo con ciclo", linea, end='')
+print(f.readlines())
+# print(list(f))
 
+print('\n')
+with open('miarchivo.txt') as fl:
+    reading_dates = fl.read()
+fl.close()
+# fl.read()
+print(fl)
+print('\n')
+"""
+fz = open('pruebaLecturaArchivo.txt', 'w')
+valor = 'la respuesta'
+s = str(valor)
+fz.write(s)
+fz.close()
+fz = open('pruebaLecturaArchivo.txt')
+print(fz.read())
+print(fz.tell())
+fz.close()
+fz = open('pruebaLecturaArchivo.txt', 'rb+')
+fz.write(b'1234567890abcdef')
+print(fz.seek(5))
+print(fz.read(1))
+print(fz.seek(-3, 2))
+print(fz.read(1))
