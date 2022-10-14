@@ -82,7 +82,7 @@ fl.close()
 # fl.read()
 print(fl)
 print('\n')
-"""
+
 fz = open('pruebaLecturaArchivo.txt', 'w')
 valor = 'la respuesta'
 s = str(valor)
@@ -98,3 +98,50 @@ print(fz.seek(5))
 print(fz.read(1))
 print(fz.seek(-3, 2))
 print(fz.read(1))
+
+import json
+
+dictionary ={
+  "id": "04",
+  "name": "sunil",
+  "department": "HR"
+}
+
+json_object = json.dumps(dictionary, indent=4)
+print(json_object)
+
+with open("sample.json", 'w') as outfile:
+    json.dump(dictionary,outfile)
+
+
+# a_file = open("pruebaLecturaArchivo.txt", 'r')
+# print(a_file.read())
+# a_file.close()
+with open("pruebaLecturaArchivo.txt", 'r') as a_file:
+    print(a_file.read())
+
+with open("pruebaLecturaArchivo.txt", 'r') as a_file:
+    print(a_file.readline())
+
+with open("pruebaLecturaArchivo.txt", 'r') as a_file:
+    print(a_file.readlines())
+
+with open("pruebaLecturaArchivo.txt", 'r') as a_file:
+    print(list(a_file))
+
+with open("pruebaLecturaArchivo.txt", 'r') as a_file:
+    for line in a_file:
+        print(line)
+
+
+"""
+
+with open("pruebaLecturaArchivo.txt", 'w') as a_file:
+    a_file.write('Hola Mundo')
+
+with open("pruebaLecturaArchivo.txt", 'w') as a_file:
+    a_file.writelines(['linea 1\n', 'linea 2\n', 'linea 3\n', 'linea 4\n', 'linea 5'])
+
+with open("pruebaLecturaArchivo.txt", 'a') as a_file:
+    a_file.write('\nHola Mundo desde Python')
+
