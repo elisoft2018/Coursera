@@ -170,4 +170,3 @@ def raiz(number):
 print(raiz(9))
 print(raiz(-4))
 """
-print('1 + 1 = ' + 2)
