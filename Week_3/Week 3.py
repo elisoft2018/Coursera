@@ -1,0 +1,36 @@
+print('Frutas')
+fruits = ['Banana', 'Orange', 'Apple', 'Banana']
+vegetables = ['Tomatoes', 'Onion']
+print('la fruta Banana esta ', fruits.count('Banana'), 'veces en la lista')
+print('Banana esta en la posición ', fruits.index('Banana'))
+print('Banana esta en la posición ', fruits.index('Banana', 1))
+
+fruits.reverse()
+print(fruits)
+fruits.append('Tangelo')
+print(fruits)
+fruits.sort()
+print(fruits)
+print(fruits.pop(0))
+print(fruits)
+fruits.insert(4, 'PinneApple')
+print(fruits)
+fruits.remove('Orange')
+print(fruits)
+fruits.copy()
+print(fruits)
+fruits.extend(vegetables)
+print(fruits)
+# fruits.clear()
+# print(fruits)
+stack = [1, 2, 3]
+stack.append(4)
+stack.append(5)
+stack.append(6)
+print(stack)
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+print(stack)
+
+
