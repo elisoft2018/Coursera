@@ -130,5 +130,5 @@ for i in range(4):
         fila_traspuesta.append(fila[i])
     transpuesta2.append(fila_traspuesta)
 print(transpuesta2)
-print()
+print('')
 print(list(zip(*matriz)))
