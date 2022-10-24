@@ -132,3 +132,13 @@ for i in range(4):
 print(transpuesta2)
 print('')
 print(list(zip(*matriz)))
+print()
+a = [-1, 1, 66.25, 333, 333, 1234.5]
+del a[0:2]
+print(a)
+del a[:]
+print(a)
+# del a
+# print(a)
+
+
