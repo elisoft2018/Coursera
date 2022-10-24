@@ -140,5 +140,58 @@ del a[:]
 print(a)
 # del a
 # print(a)
+print()
+a_list = [3, 7.5, 'Hola', 7j+5, [1, 4]]
 
+# Indexacion access
+print(a_list)
+print(a_list[0])
+print(a_list[2])
+print(a_list[-1])
+print()
 
+# slicing
+print(a_list[1:])
+print(a_list[1:2])
+print(a_list[1:3])
+print(a_list[:2])
+print(a_list[:])
+
+# someone functions
+# elements quota
+print(len(a_list))
+# element add to list
+a_list.append('Pruebas')
+print(a_list)
+# Extiende la lista con elementos de otra lista
+a_list.extend([1, 4])
+print(a_list)
+
+# Insert element in specific position
+a_list.insert(4, 'Posicion')
+print(a_list)
+a_list.insert(20, 'Fuera de rango')
+a_list.insert(-1, 'Posicion Negativa')
+print(a_list)
+# Cuenta el numero de elementos de la lista que coincidan con el parámetro enviado
+print(a_list.count(4))
+
+# Elimina el primer elemento de la lista que coincida con el parametro pasado
+a_list.remove(3)
+print(a_list)
+# Realizar copia superficial de una lista
+a_list_copy = a_list.copy()
+print(a_list_copy)
+a_list_copy.append('Elemento de la copia de lista')
+print(a_list_copy)
+print(a_list)
+# Sacar y retornar el último elemento de la lista
+print(a_list.pop())
+print(a_list_copy.pop())
+# Sacar y retornar el elemento de la lista de acuerdo a la posición enviada en el parametro
+print(a_list.pop(2))
+print(a_list_copy.pop(4))
+# Limpiar la lista
+a_list.clear()
+print(a_list)
+print(a_list_copy)
