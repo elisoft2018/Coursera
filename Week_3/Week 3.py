@@ -195,3 +195,36 @@ print(a_list_copy.pop(4))
 a_list.clear()
 print(a_list)
 print(a_list_copy)
+print()
+# Lista y Strings
+nombre = 'Agustin'
+lista = list(nombre)
+print(lista)
+# Index access
+print(nombre[0])
+print(lista[0])
+# slicing
+print(nombre[:3])
+print(lista[:3])
+print(nombre[2:3])
+print(lista[2:3])
+print(len(nombre))
+print(len(lista))
+print('u' in nombre)
+print('t' in lista)
+print('z' not in nombre)
+print('t' not in lista)
+print(nombre.count('t'))
+print(lista.count('g'))
+print()
+for letra in nombre:
+    print(letra)
+# Los string son inmutables
+lista[2] = 'o'
+print(lista)
+# nombre[2] = 'o'
+# print(nombre)
+
+print('Hola', nombre)
+print(nombre, '!!!')
+print(nombre[:2]+'o'+nombre[3:])
