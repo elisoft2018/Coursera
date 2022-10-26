@@ -228,3 +228,69 @@ print(lista)
 print('Hola', nombre)
 print(nombre, '!!!')
 print(nombre[:2]+'o'+nombre[3:])
+
+# Listas como pilas
+a_stack = [1, 2, 3]
+a_stack.append(4)
+a_stack.append(5)
+print(a_stack)
+print(a_stack.pop())
+print(a_stack.pop())
+print(a_stack.pop())
+print(a_stack)
+
+# Listas como colas
+a_queue = [1, 2, 3]
+a_queue.append(4)
+print(a_queue)
+print(a_queue.pop(0))
+print(a_queue.pop(1))
+print(a_queue)
+print()
+queue = deque([1, 2, 3])
+queue.append(4)
+queue.append(5)
+queue.append(6)
+print(queue)
+print(queue.popleft())
+print(queue.popleft())
+print(queue.popleft())
+print(queue)
+print()
+# Listas por comprensión
+
+"""Lista de cuadrados"""
+cuadrados = []
+for i in range(11):
+    cuadrados.append(i**2)
+print(cuadrados)
+"""Listas por comprensión"""
+cuadrados2 = [i**2 for i in range(11)]
+print(cuadrados2)
+"""Cuadrados utilizando la función Map"""
+cuadrados3 = list(map(lambda x: x**2, range(11)))
+print(cuadrados3)
+print()
+
+a_list_1 = [-4, -2, -1, 0, 1, 2, 3]
+print(a_list_1)
+# Lista por comprension con los numeros positivos de a_list_1
+positivos = [x for x in a_list_1 if x >= 0]
+print(positivos)
+
+# Lista con los numeros positivos de a_list_1 con la función filter
+positivos2 = list(filter(lambda x: x >= 0, a_list_1))
+print(positivos2)
+print()
+pares = [x**2 for x in range(7)]
+print(pares)
+combinados = [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+print(combinados)
+
+combinados2 = []
+for x in [1, 2, 3]:
+    for y in [3, 1, 4]:
+        if x != y:
+            combinados2.append((x, y))
+print(combinados2)
+
