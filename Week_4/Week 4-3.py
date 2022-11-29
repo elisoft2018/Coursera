@@ -33,7 +33,7 @@ for k, v in caballeros.items():
     print(k, v)
 
 for i, v in enumerate(['a', 'e', 'i', 'o', 'u']):
-    print(i, v)
+    print('rewrewrrewrw',i, v)
 
 questions = ['nombre', 'objetivo', 'color favorito']
 answers = ['lancelot', 'el santo grial', 'azul']
