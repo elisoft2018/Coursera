@@ -1,9 +1,9 @@
 import numpy
 
 board = [
-    ["-", "-", "-"],
-    ["-", "-", "-"],
-    ["-", "-", "-"],
+    ["| |", "| |", "| |"],
+    ["| |", "| |", "| |"],
+    ["| |", "| |", "| |"],
 ]
 
 
@@ -19,7 +19,7 @@ def positions_format(position):
 
 def validate_position(row, column):
     if 0 <= row <= 2 and 0 <= column <= 2:
-        if board[row][column] == "-":
+        if board[row][column] == "| |":
             return True
     return False
 
@@ -63,7 +63,7 @@ def validateWinner(letter):
 def is_board_filled():
     for row in board:
         for item in row:
-            if item == '-':
+            if item == "| |":
                 return False
     return True
 
@@ -99,6 +99,5 @@ def play():
         except ValueError:
             print('Op-ssss Debes enviar dos valores separados por coma')
             continue
-
 
 play()
